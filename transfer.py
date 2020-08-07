@@ -1,5 +1,5 @@
 import sys
-
+import os
 import tensorflow as tf
 from PIL import Image
 import matplotlib.pyplot as plt
@@ -10,6 +10,8 @@ mpl.rcParams['axes.grid'] = False
 import IPython.display as display
 import time
 import functools
+
+os.environ['TF_FORCE_GPU_ALLOW_GROWTH'] = 'true'
 
 #Converting Tensor to image
 def tensor_to_image(tensor):
@@ -39,13 +41,6 @@ def load_img(path_to_img):
     return img
 
 #displays the image
-def imshow(image, title=None):
-    if len(image.shape) > 3:
-        image = tf.squeeze(image, axis=0)
-
-    plt.imshow(image)
-    if title:
-        plt.title(title)
 
 
 def vgg_layers(layer_names):
@@ -135,13 +130,6 @@ content_path = sys.argv[1]
 style_path = sys.argv[2]
 content_image = load_img("images/"+content_path)
 style_image = load_img("images/"+style_path)
-   
-plt.subplot(1, 2, 1)
-imshow(content_image, 'Content Image')
-
-plt.subplot(1, 2, 2)
-imshow(style_image, 'Style Image')
-
 
 content_layers = ['block5_conv2'] 
 
@@ -167,13 +155,13 @@ image = tf.Variable(content_image)
 opt = tf.optimizers.Adam(learning_rate=0.02, beta_1=0.99, epsilon=1e-1)
 
 
-style_weight=1e-4
+style_weight=1e-2
 content_weight=1e4
 
 start = time.time()
 
 epochs = 1
-steps_per_epoch = 100
+steps_per_epoch = 500
 
 step = 0
 for n in range(epochs):
@@ -183,9 +171,7 @@ for n in range(epochs):
         print(".", end='')
     im = tensor_to_image(image)
     im.save("images/transfered_{}.jpg".format(step))
-    display.clear_output(wait=True)
-    display.display(tensor_to_image(image))
     print("Train step: {}".format(step))
-
     end = time.time()
     print("Total time: {:.1f}".format(end-start))
+im.show()
