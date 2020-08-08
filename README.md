@@ -4,7 +4,7 @@ Implemented single style transfer.
 
 ## The following are the requirements 
 <details>
-  <summary> Check libraries here </summary>
+  <summary> Check details here </summary>
   
   1. python3
   2. tensorflow
@@ -14,11 +14,13 @@ Implemented single style transfer.
 
 ## Testing
 The program runs for 5 epochs and each epoch has 100 steps. The program saves images after each epoch in images folder under the name transferred_<epoch_no>.jpg .
-To perform style transfer run: `python transfer.py <path-to-content>.jpg <path-to-style>.jpg`
+To perform style transfer run: `python transfer.py <path-to-content-image> <path-to-style-image>`
 
 
 ## Outputs
-![Content](https://github.com/SiddhiVTripathi/Neural-Style-Transfer-Tensorflow/blob/master/results/Glitch-at-Lake/content.jpg)
-![Style](https://github.com/SiddhiVTripathi/Neural-Style-Transfer-Tensorflow/blob/master/results/Glitch-at-Lake/style.jpg)
-![100th Step](https://github.com/SiddhiVTripathi/Neural-Style-Transfer-Tensorflow/blob/master/results/Glitch-at-Lake/transfered_100.jpg)
-![500th Step](https://github.com/SiddhiVTripathi/Neural-Style-Transfer-Tensorflow/blob/master/results/Glitch-at-Lake/transfered_500.jpg)
+![](https://github.com/SiddhiVTripathi/Neural-Style-Transfer-Tensorflow/blob/master/results/ShotOnPhone1/transfered_900.jpg)
+![](https://github.com/SiddhiVTripathi/Neural-Style-Transfer-Tensorflow/blob/master/results/The%20Dark%20Rose/transfered_500.jpg)
+![](https://github.com/SiddhiVTripathi/Neural-Style-Transfer-Tensorflow/blob/master/results/ShotOnPhone2/transfered_1500.jpg)
+
+## Changes
+The number of epochs can be modified in the file(https://github.com/SiddhiVTripathi/Neural-Style-Transfer-Tensorflow/blob/master/transfer.py) at line 150.
