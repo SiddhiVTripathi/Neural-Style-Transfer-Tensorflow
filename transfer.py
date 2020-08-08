@@ -147,8 +147,8 @@ content_weight=1e4
 
 start = time.time()
 
-epochs = 1
-steps_per_epoch = 500
+epochs = 10
+steps_per_epoch = 100
 
 step = 0
 for n in range(epochs):
