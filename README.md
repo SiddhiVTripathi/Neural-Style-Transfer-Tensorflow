@@ -13,7 +13,7 @@ Implemented single style transfer.
 </details>
 
 ## Testing
-The program runs for 5 epochs and each epoch has 100 steps. The program saves images after each epoch in images folder under the name transferred_<epoch_no>.jpg .
+The program runs for 5 epochs and each epoch has 100 steps. The program saves images after each epoch in images folder under the name transferred_<epoch_no>.jpg.<br>
 To perform style transfer run: `python transfer.py <path-to-content-image> <path-to-style-image>`
 
 
