@@ -23,4 +23,4 @@ To perform style transfer run: `python transfer.py <path-to-content-image> <path
 ![](https://github.com/SiddhiVTripathi/Neural-Style-Transfer-Tensorflow/blob/master/results/ShotOnPhone2/transfered_1500.jpg)
 
 ## Changes
-The number of epochs can be modified in the file(https://github.com/SiddhiVTripathi/Neural-Style-Transfer-Tensorflow/blob/master/transfer.py) at line 150.
+The number of epochs can be modified in the [file](https://github.com/SiddhiVTripathi/Neural-Style-Transfer-Tensorflow/blob/master/transfer.py) at line 150.
