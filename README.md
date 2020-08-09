@@ -18,9 +18,9 @@ To perform style transfer run: `python transfer.py <path-to-content-image> <path
 
 
 ## Outputs
-![](https://github.com/SiddhiVTripathi/Neural-Style-Transfer-Tensorflow/blob/master/results/ShotOnPhone1/transfered_900.jpg)
-![](https://github.com/SiddhiVTripathi/Neural-Style-Transfer-Tensorflow/blob/master/results/The%20Dark%20Rose/transfered_500.jpg)
-![](https://github.com/SiddhiVTripathi/Neural-Style-Transfer-Tensorflow/blob/master/results/ShotOnPhone2/transfered_1500.jpg)
+![](https://github.com/SiddhiVTripathi/Neural-Style-Transfer-Tensorflow/blob/master/results/ShotOnPhone1/output_yupjzU.gif)
+![](https://github.com/SiddhiVTripathi/Neural-Style-Transfer-Tensorflow/blob/master/results/The%20Dark%20Rose/output_T1NIyX.gif)
+![](https://github.com/SiddhiVTripathi/Neural-Style-Transfer-Tensorflow/blob/master/results/ShotOnPhone2/output_iTtQnU.gif)
 
 ## Changes
 The number of epochs can be modified in the [file](https://github.com/SiddhiVTripathi/Neural-Style-Transfer-Tensorflow/blob/master/transfer.py) at line 150.
