@@ -157,7 +157,7 @@ for n in range(epochs):
         train_step(image,extractor=extractor, weight=30)
         print(".", end='')
     im = tensor_to_image(image)
-    im.save("images/transfered_{}.jpg".format(step))
+    im.save("output/transfered_{}.jpg".format(step))
     print("Train step: {}".format(step))
     end = time.time()
     print(" Total time: {:.1f}".format(end-start))
